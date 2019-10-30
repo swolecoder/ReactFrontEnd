@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Header from './Header';
-import Body from './Body';
+import List from './List';
 import Delete from './Delete';
 // import Example from './Example';
 
@@ -83,7 +83,7 @@ class App extends React.Component {
             handleChange={this.handleChange}
             handleAdd={this.handleAdd}
           />
-          <Body {...this.state} markAsCompleted={this.markAsCompleted} />
+          <List {...this.state} markAsCompleted={this.markAsCompleted} />
           <Delete {...this.state} handleDelete={this.handleDelete} />
           {/* <Example/> */}
         </div>

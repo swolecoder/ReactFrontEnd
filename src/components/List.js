@@ -2,7 +2,7 @@ import React from 'react'
 import Empty from './Empty';
 import { TodoList } from "../components/TodoList";
 
-const Body = (props ) => {
+const List = (props ) => {
     const { items } = props
     const isEmpty = !items.length
 
@@ -19,4 +19,4 @@ const Body = (props ) => {
       }
 }
 
-export default Body
+export default List;
